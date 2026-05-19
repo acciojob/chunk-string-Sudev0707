@@ -1,4 +1,4 @@
-function chunkString(str, len) {
+function stringChop(str, len) {
   if (str === null) return [];
   
   const result = [];
