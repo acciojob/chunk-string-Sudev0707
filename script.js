@@ -1,5 +1,11 @@
-function stringChop(str, size) {
-  // your code here
+function chunkString(str, len) {
+  if (str === null) return [];
+  
+  const result = [];
+  for (let i = 0; i < str.length; i += len) {
+    result.push(str.slice(i, i + len));
+  }
+  return result;
 }
 
 // Do not change the code below
